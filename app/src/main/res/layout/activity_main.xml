@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/recyclerNotes"/>
+
+    <LinearLayout
+        android:id="@+id/llNoNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empty!!"
+            android:textStyle="bold"
+            android:textSize="34sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Note Is Created"
+            android:layout_marginBottom="200dp"
+            android:textSize="20sp"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create  Note"
+            android:layout_marginBottom="150dp"
+            android:textColor="#E3E4D9"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#DF424143"
+            android:textSize="23sp"
+            android:textStyle="bold|italic"
+            android:id="@+id/btnCreateNote"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*For creating note just click on Create Note Button or on + sign button at corner
+                                                             "
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="21dp"
+        android:src="@drawable/ic_add"
+        android:tint="#fff" />
+
+</RelativeLayout>
